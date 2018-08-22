@@ -12,7 +12,6 @@ def get_data():
     html=html.text
     data=json.loads(html)
     j=0
-    os.mkdir("e:\\网易云热评音乐")
     os.chdir("e:\\网易云热评音乐")
     with open(v2.get()+".doc","w",encoding="utf-8") as f:
         for i in data['hotComments']:
